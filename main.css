@@ -1,0 +1,108 @@
+.light-theme {
+        background-image: url("https://img.freepik.com/vetores-gratis/fundo-vermelho-em-branco-simples-para-negocios_53876-120509.jpg?w=740&t=st=1662648949~exp=1662649549~hmac=6e4043dfd5cb53a79efa2806dc10901271c653e3875249f2c0db2bd2616de5e9");
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+        --fontColor: #000;
+        --navcolor:linear-gradient(45deg, rgba(255,255,255,1) 50%, rgba(223,2,2,1) 100%);
+        --testcolor: #000;
+        transition: 3s; 
+        }
+.dark-theme {
+        background-image: url("https://i.pinimg.com/736x/96/43/2a/96432a2a9f0d1604608d90ac09f52d6a.jpg");
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+        backdrop-filter: invert(100%);
+        --fontColor: rgb(255, 255, 255);
+        --navcolor: #000;
+        --testcolor: rgb(255, 255, 255);
+        transition: 3s; 
+        }
+html, body {
+        min-height: 100%;
+        }
+ body   {
+        font-family: Arial;
+        padding: 0;
+        margin: 0;
+        }
+ul      {
+        font-family: Arial;
+        }
+.list {
+        list-style: square;
+        }
+*       {
+        color: var(--fontColor);
+        font-family: Arial;
+        }
+.module {
+        max-width: 250px;
+        padding: 1rem;
+        }
+nav     {
+        padding: 1px;
+        }
+.div01 {  
+        padding: 0px;
+        background-color:rgba(206, 206, 206, 0.85);
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+.btn_padrao{
+        position: top;
+        position: right;
+        background: none;
+        border-radius: 0%;
+        transition: 1s; 
+        border: none;
+        width:"20";
+        height:"20";
+        }
+.btn_padrao:focus {
+        border: none;
+        }
+.btn_padrao:hover { 
+        filter: invert(100%);
+        transition: 1s;
+        border: none;
+        }
+.btn    { 
+        filter: invert(0%);
+        position: top;
+        position: right;
+        transition: 1s ; 
+        border: none;
+        }
+.btn:focus {
+        border: none;
+        }
+.btn:hover { 
+        filter: invert(50%);
+        transition: 2s;
+        border: none;
+        }
+.dark-theme .btn { 
+        position: top;
+        position: right;
+        border: none;
+        filter: invert(100%);
+        transition: 2s ;
+        }
+.dark-theme .btn_padrao { 
+        position: top;
+        position: right;
+        border: none;
+        filter: invert(100%);
+        transition: 2s;
+        } 
+.dark-theme .home { 
+        position: top;
+        position: left;
+        border: none;
+        filter: invert(100%);
+        transition: 2s;
+        }
